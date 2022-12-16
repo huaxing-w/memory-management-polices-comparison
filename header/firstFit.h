@@ -8,6 +8,7 @@ class firstFit{
     memoryBlockL* allocate(int size);
     void freeMemory(memoryBlockL* block);
     void printMemory();
+    int findSize();
     
     private:
     memoryBlockL* head;

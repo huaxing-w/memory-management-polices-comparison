@@ -8,10 +8,12 @@ class bestFit{
     memoryBlockL* allocate(int size);
     void freeMemory(memoryBlockL* block);
     void printMemory();
+    int findSize();
     
     private:
     memoryBlockL* head;
     void clearUp();
     void mergeMemory();
     void sortMemory();
+    
 };

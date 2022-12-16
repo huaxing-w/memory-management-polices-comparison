@@ -8,6 +8,7 @@ class worstFit{
     memoryBlockL* allocate(int size);
     void printMemory();
     void freeMemory(memoryBlockL* block);
+    int findSize();
 
     private:
     memoryBlockL* head;

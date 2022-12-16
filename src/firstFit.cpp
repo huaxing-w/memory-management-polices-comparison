@@ -117,3 +117,13 @@ void firstFit::sortMemory() {
     };
     head=sortFunc(head,NULL);
 }
+
+int firstFit::findSize() {
+    int size=0;
+    memoryBlockL* cur=head;
+    while(cur){
+        size+=sizeof(cur);
+        cur=cur->next;
+    }
+    return size;
+}
